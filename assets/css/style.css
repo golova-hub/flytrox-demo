@@ -357,11 +357,9 @@ h3, .h3 {
   height: 38px;
   overflow: hidden;
   position: relative;
-  transition: height 0.5s ease-out;
 }
 .card-info .card-info-text.more {
   height: 100%;
-  transition: height 0.5s ease-out;
 }
 .card-info .card-info-text.more:after {
   background: transparent;
