@@ -148,14 +148,14 @@ body {
   }
 }
 //кнопки
-.btn {
-  padding: 16px 57px !important;
+.btn.btn-primary, .btn.btn-ozone, .btn.btn-dark {
+  padding: 16px 57px;
   justify-content: center;
   align-items: center;
-  border-radius: 30px !important;
-  font-size: 20px !important;
-  font-weight: 400 !important;
-  line-height: 1.2 !important;
+  border-radius: 30px ;
+  font-size: 20px ;
+  font-weight: 400;
+  line-height: 1;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), -1px 3px 6px 0px rgba(0, 0, 0, 0.10), -4px 10px 11px 0px rgba(0, 0, 0, 0.09), -9px 23px 15px 0px rgba(0, 0, 0, 0.05), -16px 40px 17px 0px rgba(0, 0, 0, 0.01), -25px 63px 19px 0px rgba(0, 0, 0, 0.00);
 }
 .btn-primary {
@@ -183,6 +183,7 @@ body {
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), -13px 21px 53px 0px rgba(0, 0, 0, 0.10), -51px 82px 97px 0px rgba(0, 0, 0, 0.09), -115px 185px 131px 0px rgba(0, 0, 0, 0.05), -205px 329px 155px 0px rgba(0, 0, 0, 0.01), -321px 513px 169px 0px rgba(0, 0, 0, 0.00);
     img {
       position: relative;
+      max-width: 100%;
     }
     .card-body {
       padding: 75px 40px;
@@ -371,8 +372,10 @@ h3, .h3 {
     height: 38px;
     overflow: hidden;
     position: relative;
+    //transition: height .2s ease;
     &.more {
       height: 100%;
+      //transition: height .2s ease;
       &:after {
         background: transparent;
       }
@@ -485,6 +488,9 @@ ul.thumbnails {
     margin-right: 12px;
     img {
       position: relative;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
     }
   }
   .feedback-name {
@@ -608,6 +614,7 @@ ul.thumbnails {
     max-width: 100%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 }
 .gallery-img.flytrox {
@@ -656,7 +663,7 @@ footer {
   }
 }
 #skillbox-logo {
-  max-width: 400px;
+  max-width: 100%;
 }
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
@@ -709,13 +716,11 @@ footer {
   .why .gif {
     width: 100px;
   }
-  #skillbox-logo {
-    max-width: 300px;
-  }
+
   .drone-bg {
-    width: 640px;
-    height: 170px;
-    bottom: 90px;
+    width: 43vw;
+    height: 12vw;
+    bottom: 2vw;
   }
   .partners-drone {
     width: 75%;
@@ -723,5 +728,168 @@ footer {
   }
   .military {
     margin-bottom: 100px;
+  }
+}
+
+@include media-breakpoint-down(xl) {
+  .navbar {
+    font-size: 18px;
+    .nav-item {
+      margin-left: 48px;
+    }
+    .container {
+      width: auto;
+    }
+  }
+
+  element.style {
+  }
+
+  .hero-block .hero-hdr {
+    max-width: 70%;
+  }
+  .hero-block {
+    .hero-hdr {
+      font-size: 56px;
+    }
+    .body-txt {
+      width: 50%;
+    }
+  }
+  .body-txt {
+    font-size: 16px;
+  }
+  .txt-50 {
+    font-size: 28px;
+  }
+  .numbers {
+    font-size: 60px;
+    letter-spacing: -10.5px;
+  }
+  .card-body {
+    padding: 24px;
+  }
+  .socialmedia .card.bg-light {
+    height: 74px;
+    .card-body {
+      padding: 8px;
+      img {
+        bottom: 8px;
+      }
+    }
+  }
+  .btn.btn-primary, .btn.btn-ozone, .btn.btn-dark {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+  .accsessories .title, .bg-blue .title, .bg-dark .title {
+    font-size: 24px;
+  }
+  .accsessories .body-txt {
+    max-width: 80%;
+  }
+  .bg-blue .bg-light-gradient img {
+    max-width: 60%;
+  }
+  .skillbox .txt-50 {
+    max-width: 100%;
+  }
+  .bg-blue .body-txt {
+    max-width: 100%;
+    width: 100%;
+  }
+  .bg-blue .bg-light-gradient .card-body {
+    padding: 48px 24px;
+  }
+  .soccer .card-body {
+    padding-top: 60px;
+  }
+  .txt-84 {
+    font-size: 50px;
+  }
+  .soccer {
+    .body-txt {
+      max-width: 100%;
+    }
+    .txt-18 {
+      max-width: 100%;
+    }
+  }
+  .txt-18 {
+    font-size: 12px;
+  }
+  .chat .tail {
+    bottom: -14px;
+    max-width: 100%;
+    height: 16px;
+    left: 32px;
+  }
+  .chat .gif {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+  }
+  .card.experts .txt-84, .card.experts .body-txt {
+    width: 65%;
+  }
+  .card.experts .card-body {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .drones-animation {
+    height: 128px;
+  }
+  .txt-32 {
+    font-size: 24px;
+  }
+  .why {
+    .why-icons {
+      margin-top: 20px;
+    }
+    .gif {
+      width: 56px;
+    }
+    .body-txt {
+      width: 98%;
+    }
+  }
+  .feedback-group {
+    .feedback-ava {
+      height: 36px;
+      width: 36px;
+      max-width: 36px;
+      min-width: 36px;
+    }
+    .feedback-name {
+      font-size: 14px;
+    }
+  }
+  .partners-num p {
+    font-size: 16px;
+  }
+  .military {
+    padding: 20px;
+    margin-bottom: 56px;
+    .military-img {
+      max-height: 148px;
+    }
+  }
+
+  .partners-drone {
+    width: 70%;
+    bottom: -54px;
+  }
+  .gallery-img.flytrox #flytrox-logo {
+    padding: 0 10px;
+  }
+  footer a {
+    font-size: 16px;
+  }
+}
+@include media-breakpoint-down(lg) {
+  .navbar{
+    .container {
+      width: 100%;
+    }
   }
 }
