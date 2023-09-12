@@ -966,7 +966,7 @@ footer {
     }
   }
   .card-body {
-    padding: 18px;
+    padding: 20px;
   }
   .accsessories{
     .bg-pattern .bg-img, .card.bg-pattern .bg-img {
@@ -1086,7 +1086,7 @@ footer {
   }
 
   .card.experts img.experts-bg-img {
-    width: auto;
+    //width: auto;
   }
   .card.experts .txt-84, .card.experts .body-txt {
     width: 90%;
@@ -1110,5 +1110,112 @@ footer {
   }
   .socialmedia .card.bg-light {
     height: 141px;
+  }
+}
+@media (max-width: 480px) {
+  .mw-lg-80 {
+    max-width: 100%;
+  }
+  .txt-50 {
+    font-size: 24px;
+  }
+  .hero-block .body-txt {
+    width: 66%;
+  }
+  .hero-block .main-banner {
+    width: 100%;
+    right: -7rem;
+  }
+  @keyframes main-drone {
+    0% {
+      bottom: 20%;
+    }
+    50% {
+      bottom: 30%;
+    }
+    100% {
+      bottom: 20%;
+    }
+  }
+  .hero-block .hero-bg-img {
+    height: 42%;
+    bottom: -1rem;
+    left: -4rem;
+  }
+  .card-body {
+    padding: 24px;
+  }
+  .body-txt {
+    font-size: 14px;
+  }
+  .numbers {
+    font-size: 62px;
+  }
+  .socialmedia .card.bg-light {
+    height: 61px;
+  }
+  .slider-tabs .nav-link.slider-tab.active {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .slider-tabs .nav-link.slider-tab {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .slide-img-main {
+    height: 180px;
+  }
+  #thumbnails {
+    display: none;
+  }
+  .skillbox .bg-man {
+    right: -14rem;
+    width: auto;
+  }
+  .skillbox .txt-50 {
+    max-width: 80%;
+  }
+  .bg-blue .body-txt {
+    max-width: 95%;
+  }
+  .card.experts img.experts-bg-img {
+    left: -26rem;
+    height: 600px;
+    width: initial;
+    bottom: 0;
+  }
+  .card.experts .card-body {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .card.experts .body-txt {
+    width: 100%;
+  }
+  .why .why-icons {
+    margin-top: 0;
+    width: 43%;
+  }
+  .why .bg-pattern .bg-img, .why .card.bg-pattern .bg-img {
+    top: -2rem;
+  }
+  .partners-num {
+    padding-bottom: 0;
+  }
+  .military {
+    width: 100%;
+    margin-bottom: 100px;
+    .military-img {
+      max-height: 118px;
+    }
+  }
+  .drone-bg {
+    width: 80vw;
+    height: 23vw;
+    bottom: 2vw;
+  }
+  .partners-drone {
+    bottom: -30px;
+    width: 100%;
+    right: -8rem;
   }
 }
