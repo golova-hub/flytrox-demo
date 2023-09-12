@@ -15346,7 +15346,7 @@ textarea.form-control-lg {
     width: 100px;
   }
   .drone-bg {
-    width: 43vw;
+    width: 44%;
     height: 12vw;
     bottom: 2vw;
   }
@@ -15371,6 +15371,10 @@ textarea.form-control-lg {
   }
   .navbar .container {
     width: auto;
+  }
+  ul.thumbnails .card {
+    max-height: 240px;
+    height: 25vw;
   }
   .hero-block .hero-hdr {
     max-width: 70%;
@@ -15769,6 +15773,12 @@ textarea.form-control-lg {
   #thumbnails {
     display: none;
   }
+  .skillbox .bg-man {
+    transform: scale(-1, 1);
+    left: initial;
+    right: -14rem;
+    width: 100%;
+  }
   .skillbox .txt-50 {
     max-width: 80%;
   }
@@ -15780,6 +15790,8 @@ textarea.form-control-lg {
     height: 600px;
     width: initial;
     bottom: 0;
+    max-width: initial;
+    opacity: 0.6;
   }
   .card.experts .card-body {
     padding-top: 80px;
@@ -15790,7 +15802,12 @@ textarea.form-control-lg {
   }
   .why .why-icons {
     margin-top: 0;
-    width: 43%;
+    width: 52%;
+    margin-bottom: 0;
+  }
+  .why .body-txt {
+    font-size: 11px;
+    width: 100%;
   }
   .why .bg-pattern .bg-img, .why .card.bg-pattern .bg-img {
     top: -2rem;
@@ -15817,6 +15834,9 @@ textarea.form-control-lg {
   }
   .chat .gif {
     display: none;
+  }
+  .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
+    left: -10rem;
   }
 }
 

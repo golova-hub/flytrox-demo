@@ -735,7 +735,7 @@ footer {
   }
 
   .drone-bg {
-    width: 43vw;
+    width: 44%;
     height: 12vw;
     bottom: 2vw;
   }
@@ -764,7 +764,10 @@ footer {
     }
   }
 
-
+  ul.thumbnails .card {
+    max-height: 240px;
+    height: 25vw;
+  }
   .hero-block .hero-hdr {
     max-width: 70%;
   }
@@ -1194,7 +1197,12 @@ footer {
   #thumbnails {
     display: none;
   }
-
+  .skillbox .bg-man {
+    transform: scale(-1, 1);
+    left: initial;
+    right: -14rem;
+    width: 100%;
+  }
   .skillbox .txt-50 {
     max-width: 80%;
   }
@@ -1206,6 +1214,8 @@ footer {
     height: 600px;
     width: initial;
     bottom: 0;
+    max-width: initial;
+    opacity: .6;
   }
   .card.experts .card-body {
     padding-top: 80px;
@@ -1216,7 +1226,12 @@ footer {
   }
   .why .why-icons {
     margin-top: 0;
-    width: 43%;
+    width: 52%;
+    margin-bottom: 0;
+  }
+  .why .body-txt {
+    font-size: 11px;
+    width: 100%;
   }
   .why .bg-pattern .bg-img, .why .card.bg-pattern .bg-img {
     top: -2rem;
@@ -1243,5 +1258,8 @@ footer {
   }
   .chat .gif {
     display: none;
+  }
+  .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
+    left: -10rem;
   }
 }
