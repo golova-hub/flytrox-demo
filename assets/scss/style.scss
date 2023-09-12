@@ -5,6 +5,9 @@
   color: white;
   font-size: 20px;
   line-height: 1;
+  .container {
+    width: auto;
+  }
   .nav-item {
     margin-left: 64px;
   }
@@ -555,7 +558,7 @@ ul.thumbnails {
   overflow: hidden;
   padding: 40px;
   max-width: 1364px;
-  width: 80vw;
+  width: 90%;
   float: right;
   margin-bottom: 200px;
   .military-img {
@@ -743,6 +746,12 @@ footer {
   .military {
     margin-bottom: 100px;
   }
+  .why .bg-pattern .bg-img, .why .card.bg-pattern .bg-img {
+    .bg-img {
+      max-width: 100%;
+      top: -2rem;
+    }
+  }
 }
 @include media-breakpoint-down(xl) {
   .navbar {
@@ -755,8 +764,6 @@ footer {
     }
   }
 
-  element.style {
-  }
 
   .hero-block .hero-hdr {
     max-width: 70%;
@@ -865,6 +872,10 @@ footer {
     .body-txt {
       width: 98%;
     }
+    .bg-img {
+      max-width: 100%;
+      top: -2rem;
+    }
   }
   .feedback-group {
     .feedback-ava {
@@ -918,6 +929,9 @@ footer {
     .container {
       width: 100%;
     }
+  }
+  .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
+    opacity: 0.4;
   }
   .navbar-toggler-icon {
    background-image: none;
@@ -998,6 +1012,29 @@ footer {
     width: 90%;
   }
 }
+@media (max-width: 1023px) {
+  .skillbox .bg-man {
+    transform: scale(-1, 1);
+    left: initial;
+    right: -14rem;
+    width: 72%;
+  }
+  .skillbox .txt-50 {
+    max-width: 61%;
+  }
+  .bg-blue .body-txt {
+    max-width: 65%;
+  }
+  .bg-blue .bg-light-gradient img {
+    max-width: 50%;
+  }
+  .card.experts img.experts-bg-img {
+    bottom: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+
+}
 @media (max-width: 768px) {
   .socialmedia .card.bg-light {
     height: 141px;
@@ -1026,20 +1063,8 @@ footer {
   .slider-tabs .nav-link.slider-tab.active {
     font-size: 20px;
   }
-  .skillbox .bg-man {
-    transform: scale(-1, 1);
-    right: 0;
-    left: initial;
-  }
-  .skillbox .txt-50 {
-    max-width: 61%;
-  }
-  .bg-blue .body-txt {
-    max-width: 65%;
-  }
-  .bg-blue .bg-light-gradient img {
-    max-width: 50%;
-  }
+
+
   .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
     opacity: .4;
   }
@@ -1111,6 +1136,7 @@ footer {
   .socialmedia .card.bg-light {
     height: 141px;
   }
+
 }
 @media (max-width: 480px) {
   .mw-lg-80 {
@@ -1168,10 +1194,7 @@ footer {
   #thumbnails {
     display: none;
   }
-  .skillbox .bg-man {
-    right: -14rem;
-    width: auto;
-  }
+
   .skillbox .txt-50 {
     max-width: 80%;
   }
@@ -1217,5 +1240,8 @@ footer {
     bottom: -30px;
     width: 100%;
     right: -8rem;
+  }
+  .chat .gif {
+    display: none;
   }
 }

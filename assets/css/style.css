@@ -4,6 +4,9 @@
   font-size: 20px;
   line-height: 1;
 }
+.navbar .container {
+  width: auto;
+}
 .navbar .nav-item {
   margin-left: 64px;
 }
@@ -542,7 +545,7 @@ ul.thumbnails .card .card-body .name {
   overflow: hidden;
   padding: 40px;
   max-width: 1364px;
-  width: 80vw;
+  width: 90%;
   float: right;
   margin-bottom: 200px;
 }
@@ -15354,6 +15357,10 @@ textarea.form-control-lg {
   .military {
     margin-bottom: 100px;
   }
+  .why .bg-pattern .bg-img .bg-img, .why .card.bg-pattern .bg-img .bg-img {
+    max-width: 100%;
+    top: -2rem;
+  }
 }
 @media (max-width: 1279.98px) {
   .navbar {
@@ -15467,6 +15474,10 @@ textarea.form-control-lg {
   .why .body-txt {
     width: 98%;
   }
+  .why .bg-img {
+    max-width: 100%;
+    top: -2rem;
+  }
   .feedback-group .feedback-ava {
     height: 36px;
     width: 36px;
@@ -15514,6 +15525,9 @@ textarea.form-control-lg {
 @media (max-width: 1023.98px) {
   .navbar .container {
     width: 100%;
+  }
+  .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
+    opacity: 0.4;
   }
   .navbar-toggler-icon {
     background-image: none;
@@ -15587,6 +15601,28 @@ textarea.form-control-lg {
     width: 90%;
   }
 }
+@media (max-width: 1023px) {
+  .skillbox .bg-man {
+    transform: scale(-1, 1);
+    left: initial;
+    right: -14rem;
+    width: 72%;
+  }
+  .skillbox .txt-50 {
+    max-width: 61%;
+  }
+  .bg-blue .body-txt {
+    max-width: 65%;
+  }
+  .bg-blue .bg-light-gradient img {
+    max-width: 50%;
+  }
+  .card.experts img.experts-bg-img {
+    bottom: 0;
+    height: 100%;
+    max-width: 100%;
+  }
+}
 @media (max-width: 768px) {
   .socialmedia .card.bg-light {
     height: 141px;
@@ -15614,20 +15650,6 @@ textarea.form-control-lg {
   }
   .slider-tabs .nav-link.slider-tab.active {
     font-size: 20px;
-  }
-  .skillbox .bg-man {
-    transform: scale(-1, 1);
-    right: 0;
-    left: initial;
-  }
-  .skillbox .txt-50 {
-    max-width: 61%;
-  }
-  .bg-blue .body-txt {
-    max-width: 65%;
-  }
-  .bg-blue .bg-light-gradient img {
-    max-width: 50%;
   }
   .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
     opacity: 0.4;
@@ -15747,10 +15769,6 @@ textarea.form-control-lg {
   #thumbnails {
     display: none;
   }
-  .skillbox .bg-man {
-    right: -14rem;
-    width: auto;
-  }
   .skillbox .txt-50 {
     max-width: 80%;
   }
@@ -15796,6 +15814,9 @@ textarea.form-control-lg {
     bottom: -30px;
     width: 100%;
     right: -8rem;
+  }
+  .chat .gif {
+    display: none;
   }
 }
 
