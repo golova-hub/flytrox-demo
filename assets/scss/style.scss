@@ -9,7 +9,7 @@
     margin-left: 64px;
   }
   .nav-link {
-    color: white;
+    color: $light;
     &:hover, &:focus {
       color: $primary;
     }
@@ -175,6 +175,7 @@ body {
     z-index: 0;
     bottom: 0;
     right: 0;
+    max-width: 100%;
   }
   .bg-light-gradient {
     border: 1px solid rgba(217, 217, 217, 0.50);
@@ -328,9 +329,14 @@ hr {
   position: relative;
   object-fit: cover;
   object-position: center;
+  height: 416px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  text-align: center;
   img {
   position: relative;
     max-width: 100%;
+    height: 100%;
   }
 }
 h3, .h3 {
@@ -444,6 +450,13 @@ ul.thumbnails {
     line-height: normal;
     margin-bottom: 10px;
   }
+  .thumbnail:hover {
+    cursor: pointer;
+    opacity: .95;
+  }
+  .thumbnail.is-active .name {
+    color: #9C9797;
+  }
   .price {
     font-size: 24px;
     font-style: normal;
@@ -451,7 +464,8 @@ ul.thumbnails {
     line-height: 112%; /* 26.88px */
   }
   .card {
-    height: 396px;
+    max-height: 396px;
+    height: 25vw;
     position: relative;
     object-fit: cover;
     overflow: hidden;
@@ -513,8 +527,8 @@ ul.thumbnails {
   object-position: center;
   .bg-img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    // height: 100%;
     z-index: 1;
   }
   .card-body {
@@ -730,7 +744,6 @@ footer {
     margin-bottom: 100px;
   }
 }
-
 @include media-breakpoint-down(xl) {
   .navbar {
     font-size: 18px;
@@ -753,7 +766,7 @@ footer {
       font-size: 56px;
     }
     .body-txt {
-      width: 50%;
+      width: 48%;
     }
   }
   .body-txt {
@@ -885,11 +898,217 @@ footer {
   footer a {
     font-size: 16px;
   }
+  .drone-attr-item {
+    font-size: 12px;
+    padding-left: 6px;
+    margin-left: 6px;
+  }
+  .slide-img-main {
+    height: 334px;
+  }
+  ul.thumbnails .name {
+    font-size: 22px;
+  }
+  ul.thumbnails .price {
+    font-size: 20px;
+  }
 }
 @include media-breakpoint-down(lg) {
   .navbar{
     .container {
       width: 100%;
     }
+  }
+  .navbar-toggler-icon {
+   background-image: none;
+    display: block;
+    height: 3px;
+    background-color: $light;
+    border-radius: 2px;
+    position: relative;
+    &:before, &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background-color: $light;
+      left: 0;
+    }
+    &:before {
+      top: -8px;
+    }
+    &:after {
+      bottom: -8px;
+    }
+  }
+  .navbar-toggler {
+    height: 48px;
+    padding: 0;
+  }
+  .hero-block .hero-hdr {
+    font-size: 44px;
+  }
+
+  .mw-lg-80 {
+    max-width: 80%
+  }
+  ul.thumbnails {
+    .card {
+      height: 205px;
+      .card-body .name {
+        font-size: 20px;
+      }
+    }
+    .price {
+      font-size: 20px;
+    }
+  }
+  .card-body {
+    padding: 18px;
+  }
+  .accsessories{
+    .bg-pattern .bg-img, .card.bg-pattern .bg-img {
+      height: 100%;
+    }
+  }
+  .soccer {
+   .bg-img {
+      height: 100%;
+    }
+  }
+  .why .gif {
+    width: 60%;
+  }
+  .card.experts .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .txt-84 {
+    font-size: 40px;
+  }
+  .military .military-img {
+    max-height: 130px;
+  }
+  .partners-drone {
+    bottom: -20px;
+  }
+  footer .logo-flytrox {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .socialmedia .card.bg-light {
+    height: 141px;
+  }
+  .socialmedia .card.bg-light .card-body {
+    padding: 12px;
+  }
+  .socialmedia .card.bg-light .card-body img {
+    bottom: 12px;
+    width: 50%;
+    max-height: 44px;
+  }
+  .numbers {
+    font-size: 90px;
+  }
+  .slide-img-main {
+    height: 290px;
+  }
+  .btn.btn-primary, .btn.btn-ozone, .btn.btn-dark {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+  .slider-tabs .nav-link.slider-tab {
+    font-size: 20px;
+  }
+  .slider-tabs .nav-link.slider-tab.active {
+    font-size: 20px;
+  }
+  .skillbox .bg-man {
+    transform: scale(-1, 1);
+    right: 0;
+    left: initial;
+  }
+  .skillbox .txt-50 {
+    max-width: 61%;
+  }
+  .bg-blue .body-txt {
+    max-width: 65%;
+  }
+  .bg-blue .bg-light-gradient img {
+    max-width: 50%;
+  }
+  .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
+    opacity: .4;
+  }
+  .why {
+    .card {
+      height: 40vw;
+    }
+    .bg-img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+  .hdr-group {
+    padding: 0 18px;
+  }
+  #skillbox-logo {
+    max-width: 50%;
+    margin-top: 32px;
+  }
+  .partners-num svg {
+    max-width: 26%;
+  }
+}
+@include media-breakpoint-down(md)  {
+
+  .hero-block .hero-hdr {
+    max-width: 100%;
+    font-size: 40px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+  .partners-num p {
+    font-size: 12px;
+    word-wrap: normal;
+  }
+  .military {
+    padding: 12px;
+    margin-bottom: 32px;
+    .military-img {
+      max-height: 100px;
+    }
+  }
+
+  .card.experts img.experts-bg-img {
+    width: auto;
+  }
+  .card.experts .txt-84, .card.experts .body-txt {
+    width: 90%;
+  }
+  .why .icon {
+    width: 20px;
+  }
+  .why .body-txt {
+  font-size: 12px;
+  }
+  .why .bg-pattern .bg-img, .why .card.bg-pattern .bg-img {
+  width: 100%;
+  }
+  .hdr-group {
+    padding: 0px 12px;
+  }
+  footer .contacts {
+    .txt-18 {
+      font-size: 16px;
+    }
+  }
+  .socialmedia .card.bg-light {
+    height: 141px;
   }
 }
