@@ -74,7 +74,7 @@ body {
 }
 
 .numbers {
-  font-size: 130px;
+  font-size: 7rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: -17.5px;
@@ -333,7 +333,7 @@ hr {
   position: relative;
   object-fit: cover;
   object-position: center;
-  height: 416px;
+  max-height: 416px;
   overflow: hidden;
   margin-bottom: 32px;
   text-align: center;
@@ -411,6 +411,7 @@ h3, .h3 {
   line-height: 112%; /* 17.92px */
 
 }
+
 .drone-attr-item {
   padding-left: 16px;
   margin-left: 16px;
@@ -611,7 +612,7 @@ ul.thumbnails {
     object-fit: cover;
     object-position: top;
     width: 100%;
-    img {
+    img, video {
       display: block;
       //position: absolute;
       max-width: 100%;
@@ -626,7 +627,7 @@ ul.thumbnails {
   object-fit: cover;
   object-position: top;
   width: 100%;
-  img {
+  img, video {
     display: block;
     //position: absolute;
     max-width: 100%;
@@ -683,6 +684,32 @@ footer {
 #skillbox-logo {
   max-width: 100%;
 }
+.sm-wrapper {
+  display: grid;
+  width:100%;
+  height:100%;
+  grid-template-columns: 45% 45%;
+  grid-row: auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 10%;
+  .sm-item {
+    //border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.10), -13px 21px 53px 0px rgba(0, 0, 0, 0.10), -51px 82px 97px 0px rgba(0, 0, 0, 0.09), -115px 185px 131px 0px rgba(0, 0, 0, 0.05), -205px 329px 155px 0px rgba(0, 0, 0, 0.01), -321px 513px 169px 0px rgba(0, 0, 0, 0.00);
+    img {
+      max-width: 60px;
+      max-height: 40px;
+      margin: 0 0 16px 16px;
+    }
+  }
+}
+.standard-h {
+  min-height: 396px;
+}
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 @include media-breakpoint-down(xxl) {
@@ -697,6 +724,9 @@ footer {
       height: 60%;
     }
   }
+  .standard-h {
+    min-height: 345px;
+  }
   .body-txt {
     font-size: 20px;
   }
@@ -704,7 +734,7 @@ footer {
     font-size: 40px;
   }
   .numbers {
-    font-size: 104px;
+    font-size: 6rem;
   }
   .socialmedia .card.bg-light {
     height: 119px;
@@ -764,6 +794,17 @@ footer {
       width: auto;
     }
   }
+  .standard-h {
+    min-height: 240px;
+  }
+  .sm-wrapper .sm-item img {
+    max-width: 30px;
+    max-height: 22px;
+    margin: 0 0 16px 16px;
+  }
+  .numbers {
+    font-size: 5rem;
+  }
 
   ul.thumbnails .card {
     max-height: 240px;
@@ -787,7 +828,6 @@ footer {
     font-size: 28px;
   }
   .numbers {
-    font-size: 60px;
     letter-spacing: -10.5px;
   }
   .card-body {
@@ -928,11 +968,28 @@ footer {
     font-size: 20px;
   }
 }
+@media (max-width: 1280px){
+  .numbers {
+    font-size: 4.5rem;
+  }
+}
 @include media-breakpoint-down(lg) {
   .navbar{
     .container {
       width: 100%;
     }
+  }
+  .standard-h {
+    min-height: 360px;
+  }
+  .sm-wrapper {
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 6%;
+    grid-row-gap: 6%;
+  }
+  .sm-wrapper .sm-item img {
+    max-width: 48px;
+    max-height: 36px;
   }
   .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
     opacity: 0.4;
@@ -1040,19 +1097,8 @@ footer {
 
 }
 @media (max-width: 768px) {
-  .socialmedia .card.bg-light {
-    height: 141px;
-  }
-  .socialmedia .card.bg-light .card-body {
-    padding: 12px;
-  }
-  .socialmedia .card.bg-light .card-body img {
-    bottom: 12px;
-    width: 50%;
-    max-height: 44px;
-  }
-  .numbers {
-    font-size: 90px;
+  #thumbnails {
+    display: none;
   }
   .slide-img-main {
     height: 290px;
@@ -1067,8 +1113,6 @@ footer {
   .slider-tabs .nav-link.slider-tab.active {
     font-size: 20px;
   }
-
-
   .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
     opacity: .4;
   }
@@ -1090,6 +1134,17 @@ footer {
   }
   .partners-num svg {
     max-width: 26%;
+  }
+  .numbers {
+    font-size: 3.5rem;
+  }
+  .standard-h {
+    min-height: 210px;
+  }
+  .sm-wrapper .sm-item img {
+    max-width: 34px;
+    max-height: 22px;
+    margin: 0 0 10px 10px;
   }
 }
 @include media-breakpoint-down(md)  {
@@ -1156,6 +1211,9 @@ footer {
     width: 100%;
     right: -7rem;
   }
+  .standard-h {
+    min-height: 232px;
+  }
   @keyframes main-drone {
     0% {
       bottom: 20%;
@@ -1173,7 +1231,7 @@ footer {
     left: -4rem;
   }
   .card-body {
-    padding: 24px;
+    padding: 18px;
   }
   .body-txt {
     font-size: 14px;
@@ -1195,9 +1253,7 @@ footer {
   .slide-img-main {
     height: 180px;
   }
-  #thumbnails {
-    display: none;
-  }
+
   .skillbox .bg-man {
     transform: scale(-1, 1);
     left: initial;
@@ -1262,5 +1318,37 @@ footer {
   }
   .bg-pattern.soccer .bg-img, .card.bg-pattern.soccer .bg-img {
     left: -10rem;
+  }
+  .dron-icon img{
+    width: 35px;
+  }
+}
+@media (max-width: 425px) {
+  .standard-h {
+    min-height: 200px;
+  }
+}
+@media (max-width: 376px) {
+  .hero-block .hero-hdr {
+    font-size: 36px;
+  }
+
+  .why .icon {
+    width: 14px;
+  }
+  .standard-h {
+    min-height: 175px;
+  }
+  .sm-wrapper .sm-item img {
+    max-width: 27px;
+    max-height: 18px;
+  }
+}
+@media (max-width: 320px) {
+  .standard-h {
+    min-height: initial;
+  }
+  .numbers {
+    font-size: 3rem;
   }
 }
