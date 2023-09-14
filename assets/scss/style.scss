@@ -1344,6 +1344,8 @@ footer {
   .slide-img-main img {
     height: initial;
     top: -3rem;
+    max-width: initial;
+    width: 100%;
   }
 }
 @media (max-width: 376px) {
