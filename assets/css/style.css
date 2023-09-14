@@ -223,8 +223,9 @@ body {
   position: relative;
   object-fit: cover;
   overflow: hidden;
+  z-index: 0;
 }
-.card.experts img.experts-bg-img {
+.card.experts .experts-bg-img {
   position: absolute;
   bottom: -50px;
   width: 100%;
@@ -15679,7 +15680,7 @@ textarea.form-control-lg {
   .bg-blue .bg-light-gradient img {
     max-width: 50%;
   }
-  .card.experts img.experts-bg-img {
+  .card.experts .experts-bg-img {
     bottom: 0;
     height: 100%;
     max-width: 100%;
@@ -15732,6 +15733,14 @@ textarea.form-control-lg {
     max-width: 34px;
     max-height: 22px;
     margin: 0 0 10px 10px;
+  }
+  .card.experts .experts-bg-img {
+    left: -26rem;
+    height: 600px;
+    width: initial;
+    bottom: 0;
+    max-width: initial;
+    opacity: 0.6;
   }
 }
 @media (max-width: 767.98px) {
@@ -15787,6 +15796,7 @@ textarea.form-control-lg {
   }
   .hero-block .main-banner {
     width: 100%;
+    max-width: 418px;
     right: -7rem;
   }
   .standard-h {
@@ -15817,9 +15827,6 @@ textarea.form-control-lg {
   .numbers {
     font-size: 55px;
   }
-  .socialmedia .card.bg-light {
-    height: 61px;
-  }
   .slider-tabs .nav-link.slider-tab.active {
     font-size: 16px;
     margin-bottom: 20px;
@@ -15843,7 +15850,7 @@ textarea.form-control-lg {
   .bg-blue .body-txt {
     max-width: 95%;
   }
-  .card.experts img.experts-bg-img {
+  .card.experts .experts-bg-img {
     left: -26rem;
     height: 600px;
     width: initial;
@@ -15902,7 +15909,20 @@ textarea.form-control-lg {
 }
 @media (max-width: 425px) {
   .standard-h {
-    min-height: 200px;
+    min-height: 182px;
+  }
+  .slider-tabs .nav-link.slider-tab.active {
+    margin-bottom: 12px;
+  }
+  .slider-tabs .nav-link.slider-tab {
+    margin-bottom: 12px;
+  }
+  .read-more {
+    font-size: 12px;
+  }
+  .slide-img-main img {
+    height: initial;
+    top: -3rem;
   }
 }
 @media (max-width: 376px) {
