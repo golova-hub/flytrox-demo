@@ -342,6 +342,7 @@ hr {
   position: relative;
     max-width: 100%;
     height: 100%;
+    top: -5rem;
   }
 }
 h3, .h3 {
@@ -961,6 +962,9 @@ footer {
   }
   .slide-img-main {
     height: 334px;
+    img {
+      top: -3rem;
+    }
   }
   ul.thumbnails .name {
     font-size: 22px;
@@ -1102,7 +1106,10 @@ footer {
     display: none;
   }
   .slide-img-main {
-    height: 290px;
+    height: 200px;
+    img{
+      top: -1rem;
+    }
   }
   .btn.btn-primary, .btn.btn-ozone, .btn.btn-dark {
     padding: 12px 20px;
@@ -1256,7 +1263,7 @@ footer {
     margin-bottom: 20px;
   }
   .slide-img-main {
-    height: 180px;
+    height: 160px;
   }
 
   .skillbox .bg-man {
@@ -1344,8 +1351,7 @@ footer {
   .slide-img-main img {
     height: initial;
     top: -3rem;
-    max-width: initial;
-    width: 100%;
+
   }
 }
 @media (max-width: 376px) {

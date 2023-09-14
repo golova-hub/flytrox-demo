@@ -329,6 +329,7 @@ hr {
   position: relative;
   max-width: 100%;
   height: 100%;
+  top: -5rem;
 }
 
 h3, .h3 {
@@ -15561,6 +15562,9 @@ textarea.form-control-lg {
   .slide-img-main {
     height: 334px;
   }
+  .slide-img-main img {
+    top: -3rem;
+  }
   ul.thumbnails .name {
     font-size: 22px;
   }
@@ -15691,7 +15695,10 @@ textarea.form-control-lg {
     display: none;
   }
   .slide-img-main {
-    height: 290px;
+    height: 200px;
+  }
+  .slide-img-main img {
+    top: -1rem;
   }
   .btn.btn-primary, .btn.btn-ozone, .btn.btn-dark {
     padding: 12px 20px;
@@ -15836,7 +15843,7 @@ textarea.form-control-lg {
     margin-bottom: 20px;
   }
   .slide-img-main {
-    height: 180px;
+    height: 160px;
   }
   .skillbox .bg-man {
     transform: scale(-1, 1);
@@ -15923,8 +15930,6 @@ textarea.form-control-lg {
   .slide-img-main img {
     height: initial;
     top: -3rem;
-    max-width: initial;
-    width: 100%;
   }
 }
 @media (max-width: 376px) {
